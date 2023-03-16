@@ -1,38 +1,108 @@
-.App {
+.app {
+  width: 950px;
+  height: 470px;
+  padding: 30px;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  background-color: white;
+}
+
+button {
+  background-color: #e7e9eb;
+  display: block;
+  position: relative;
+  padding: 10px 10px 10px 50px;
+  margin-bottom: 2px;
+  cursor: pointer;
+  font-size: 18px;
+  word-wrap: break-word;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  border: none;
+  line-height: 1.7em;
+}
+
+button:hover {
+  background-color: #c0c5c3;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+}
+
+h1 {
+  font-weight: 500;
+  margin-block: 25px;
+}
+
+h3 {
+  font-weight: 500;
+}
+
+.go {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  position: relative;
+  height: max-content;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.rst,.show {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  padding: 0;
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.rst:hover {
+  background-color: #059862;
   color: white;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.show:hover {
+  background-color: #059862;
+  color: white;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.answertab {
+  position: absolute;
+  top: 0px;
+  background-color: black;
+  z-index: 1px;
+  width: 900px;
+  height: 400px;
+  padding: 20px;
+  color: white;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.tabTOp{
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.closeBtn{
+  width: max-content;
+  height: max-content;
+  padding: 5px 10px;
+}
+
+.btnsgo{
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 100px;
 }
